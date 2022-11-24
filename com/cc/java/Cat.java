@@ -32,11 +32,22 @@ public class Cat {
         if (!isFemale) {
             return Integer.toString(age);
         } else {
-            return "!#?Zd!";
+            return checkEscalationLevel(); 
         }
     }
 
-
+public String checkEscalationLevel() {
+    switch (1) {
+        case 1:
+            return "This is an inappropriate question!";
+        case 2:
+            return "I've told you once!"; 
+        case 3:
+            return "Talk to the hand!";        
+        default:
+            return "1#!?&&%"; 
+    }
+}
 
 
     
